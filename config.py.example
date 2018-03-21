@@ -1,0 +1,5 @@
+reddit_id = 'sampleidhere'
+reddit_secret = 'Th1s1smys3cr3t'
+reddit_user_agent = 'spam bot'
+reddit_user = 'user'
+reddit_pass = 'hunter2'
