@@ -21,7 +21,10 @@ def spam():
     # Goes through the rising posts for potential max visibility
     for post in reddit.subreddit('all').rising():
         # Check if haven't commented on this post recently
-        if post not in reddit.user.me().new(limit=5):
+        for comment in reddit.user.me().new(limit=5):
+            if post == comment.parent():
+                break
+        else
             try:
                 # Directly reply to post if not many comments already
                 if post.num_comments < 15:
